@@ -32,17 +32,16 @@
 			this.bolaoDataSet = new AppBolao3.bolaoDataSet();
 			this.bolaoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.dgvClassificacao = new System.Windows.Forms.DataGridView();
-			this.bolaoDataSet1 = new AppBolao3.bolaoDataSet1();
 			this.tbparticipantesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.bolaoDataSet1 = new AppBolao3.bolaoDataSet1();
 			this.tb_participantesTableAdapter = new AppBolao3.bolaoDataSet1TableAdapters.tb_participantesTableAdapter();
-			this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Pontos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnAtualizarTabela = new System.Windows.Forms.Button();
+			this.Posição = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClassificacao)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.tbparticipantesBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// bolaoDataSet
@@ -57,13 +56,11 @@
 			// 
 			// dgvClassificacao
 			// 
+			this.dgvClassificacao.AllowUserToAddRows = false;
 			this.dgvClassificacao.AllowUserToDeleteRows = false;
-			this.dgvClassificacao.AutoGenerateColumns = false;
 			this.dgvClassificacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvClassificacao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nome,
-            this.Pontos});
-			this.dgvClassificacao.DataSource = this.tbparticipantesBindingSource;
+            this.Posição});
 			this.dgvClassificacao.Location = new System.Drawing.Point(23, 29);
 			this.dgvClassificacao.Name = "dgvClassificacao";
 			this.dgvClassificacao.ReadOnly = true;
@@ -71,37 +68,20 @@
 			this.dgvClassificacao.RowTemplate.Height = 24;
 			this.dgvClassificacao.Size = new System.Drawing.Size(507, 395);
 			this.dgvClassificacao.TabIndex = 0;
-			this.dgvClassificacao.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClassificacao_CellContentClick);
-			// 
-			// bolaoDataSet1
-			// 
-			this.bolaoDataSet1.DataSetName = "bolaoDataSet1";
-			this.bolaoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// tbparticipantesBindingSource
 			// 
 			this.tbparticipantesBindingSource.DataMember = "tb_participantes";
 			this.tbparticipantesBindingSource.DataSource = this.bolaoDataSet1;
 			// 
+			// bolaoDataSet1
+			// 
+			this.bolaoDataSet1.DataSetName = "bolaoDataSet1";
+			this.bolaoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
 			// tb_participantesTableAdapter
 			// 
 			this.tb_participantesTableAdapter.ClearBeforeFill = true;
-			// 
-			// Nome
-			// 
-			this.Nome.HeaderText = "Nome Participante";
-			this.Nome.MinimumWidth = 6;
-			this.Nome.Name = "Nome";
-			this.Nome.ReadOnly = true;
-			this.Nome.Width = 125;
-			// 
-			// Pontos
-			// 
-			this.Pontos.HeaderText = "Total Pontos";
-			this.Pontos.MinimumWidth = 6;
-			this.Pontos.Name = "Pontos";
-			this.Pontos.ReadOnly = true;
-			this.Pontos.Width = 125;
 			// 
 			// btnAtualizarTabela
 			// 
@@ -113,6 +93,14 @@
 			this.btnAtualizarTabela.UseVisualStyleBackColor = true;
 			this.btnAtualizarTabela.Click += new System.EventHandler(this.btnAtualizarTabela_Click);
 			// 
+			// Posição
+			// 
+			this.Posição.Frozen = true;
+			this.Posição.HeaderText = "Posição";
+			this.Posição.MinimumWidth = 6;
+			this.Posição.Name = "Posição";
+			this.Posição.Width = 125;
+			// 
 			// GridClassificacao
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,12 +111,11 @@
 			this.Controls.Add(this.dgvClassificacao);
 			this.Name = "GridClassificacao";
 			this.Text = "GridClassificacao";
-			
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClassificacao)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.tbparticipantesBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -140,8 +127,7 @@
 		private bolaoDataSet1 bolaoDataSet1;
 		private System.Windows.Forms.BindingSource tbparticipantesBindingSource;
 		private bolaoDataSet1TableAdapters.tb_participantesTableAdapter tb_participantesTableAdapter;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Pontos;
 		private System.Windows.Forms.Button btnAtualizarTabela;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Posição;
 	}
 }

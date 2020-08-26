@@ -21,16 +21,6 @@ namespace AppBolao3.Screens
 		
 
 
-		private void btnClassificacao_Click(object sender, EventArgs e)
-		{
-			GridClassificacao formgridClassificacao = new GridClassificacao();
-			Home formHome = new Home();
-			formgridClassificacao.Show();
-			formHome.Close();
-
-
-		}
-
 		
 
 		private void CbolaoToolStripMenuItem_Click(object sender, EventArgs e)

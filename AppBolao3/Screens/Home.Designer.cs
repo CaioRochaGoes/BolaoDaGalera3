@@ -43,6 +43,7 @@
 			// MenuSup
 			// 
 			this.MenuSup.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.MenuSup.ImeMode = System.Windows.Forms.ImeMode.NoControl;
 			this.MenuSup.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.classificacaoToolStripMenuItem,
             this.configsToolStripMenuItem1,
@@ -124,13 +125,13 @@
 
 		#endregion
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-		private System.Windows.Forms.MenuStrip MenuSup;
-		private System.Windows.Forms.ToolStripMenuItem classificacaoToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem CbolaoToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem configsToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem tabelasToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem participantesToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem outrasOpcoesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+		public System.Windows.Forms.ToolStripMenuItem classificacaoToolStripMenuItem;
+		public System.Windows.Forms.MenuStrip MenuSup;
+		public System.Windows.Forms.ToolStripMenuItem CbolaoToolStripMenuItem;
 	}
 }
