@@ -29,35 +29,79 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-			this.btnClassificacao = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
+			this.MenuSup = new System.Windows.Forms.MenuStrip();
+			this.classificacaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.CbolaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.configsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tabelasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.participantesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.outrasOpcoesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.MenuSup.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// btnClassificacao
+			// MenuSup
 			// 
-			this.btnClassificacao.BackColor = System.Drawing.Color.LightSkyBlue;
-			this.btnClassificacao.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnClassificacao.ForeColor = System.Drawing.Color.MidnightBlue;
-			this.btnClassificacao.Location = new System.Drawing.Point(26, 409);
-			this.btnClassificacao.Name = "btnClassificacao";
-			this.btnClassificacao.Size = new System.Drawing.Size(166, 52);
-			this.btnClassificacao.TabIndex = 0;
-			this.btnClassificacao.Text = "Classificação";
-			this.btnClassificacao.UseVisualStyleBackColor = false;
-			this.btnClassificacao.Click += new System.EventHandler(this.btnClassificacao_Click);
+			this.MenuSup.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.MenuSup.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.classificacaoToolStripMenuItem,
+            this.configsToolStripMenuItem1,
+            this.tabelasToolStripMenuItem1,
+            this.participantesToolStripMenuItem1,
+            this.outrasOpcoesToolStripMenuItem});
+			this.MenuSup.Location = new System.Drawing.Point(0, 0);
+			this.MenuSup.Name = "MenuSup";
+			this.MenuSup.Size = new System.Drawing.Size(575, 28);
+			this.MenuSup.TabIndex = 3;
+			this.MenuSup.Text = "MenuSup";
 			// 
-			// button1
+			// classificacaoToolStripMenuItem
 			// 
-			this.button1.BackColor = System.Drawing.Color.Black;
-			this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.ForeColor = System.Drawing.Color.Red;
-			this.button1.Location = new System.Drawing.Point(370, 409);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(166, 52);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "SAIR";
-			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.classificacaoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CbolaoToolStripMenuItem});
+			this.classificacaoToolStripMenuItem.Name = "classificacaoToolStripMenuItem";
+			this.classificacaoToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
+			this.classificacaoToolStripMenuItem.Text = "Classificação";
+			// 
+			// CbolaoToolStripMenuItem
+			// 
+			this.CbolaoToolStripMenuItem.Name = "CbolaoToolStripMenuItem";
+			this.CbolaoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.CbolaoToolStripMenuItem.Text = "Bolão";
+			this.CbolaoToolStripMenuItem.Click += new System.EventHandler(this.CbolaoToolStripMenuItem_Click);
+			// 
+			// configsToolStripMenuItem1
+			// 
+			this.configsToolStripMenuItem1.Name = "configsToolStripMenuItem1";
+			this.configsToolStripMenuItem1.Size = new System.Drawing.Size(73, 24);
+			this.configsToolStripMenuItem1.Text = "Configs";
+			// 
+			// tabelasToolStripMenuItem1
+			// 
+			this.tabelasToolStripMenuItem1.Name = "tabelasToolStripMenuItem1";
+			this.tabelasToolStripMenuItem1.Size = new System.Drawing.Size(72, 24);
+			this.tabelasToolStripMenuItem1.Text = "Tabelas";
+			// 
+			// participantesToolStripMenuItem1
+			// 
+			this.participantesToolStripMenuItem1.Name = "participantesToolStripMenuItem1";
+			this.participantesToolStripMenuItem1.Size = new System.Drawing.Size(107, 24);
+			this.participantesToolStripMenuItem1.Text = "Participantes";
+			// 
+			// outrasOpcoesToolStripMenuItem
+			// 
+			this.outrasOpcoesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem});
+			this.outrasOpcoesToolStripMenuItem.Name = "outrasOpcoesToolStripMenuItem";
+			this.outrasOpcoesToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
+			this.outrasOpcoesToolStripMenuItem.Text = "Outras Opções";
+			// 
+			// sairToolStripMenuItem
+			// 
+			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.sairToolStripMenuItem.Text = "Sair";
+			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
 			// Home
 			// 
@@ -66,18 +110,27 @@
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(575, 497);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.btnClassificacao);
+			this.Controls.Add(this.MenuSup);
 			this.DoubleBuffered = true;
+			this.Enabled = false;
 			this.Name = "Home";
 			this.Text = "Home";
+			this.MenuSup.ResumeLayout(false);
+			this.MenuSup.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Button btnClassificacao;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+		private System.Windows.Forms.MenuStrip MenuSup;
+		private System.Windows.Forms.ToolStripMenuItem classificacaoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem CbolaoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem configsToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem tabelasToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem participantesToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem outrasOpcoesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
 	}
 }
