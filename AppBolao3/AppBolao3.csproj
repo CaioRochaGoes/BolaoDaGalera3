@@ -104,6 +104,7 @@
       <DependentUpon>bolaoDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Connection\StringConnection.cs" />
+    <Compile Include="Imports\Importadores\ImporTabelaPaisesCod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\GridClassificacao.cs">
@@ -155,6 +156,7 @@
     <None Include="bolaoDataSet1.xss">
       <DependentUpon>bolaoDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="Imports\CSVs\TabelaPaisesCod.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
