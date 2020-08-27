@@ -29,6 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.bolaoDataSet = new AppBolao3.bolaoDataSet();
 			this.bolaoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.dgvClassificacao = new System.Windows.Forms.DataGridView();
@@ -36,7 +39,6 @@
 			this.bolaoDataSet1 = new AppBolao3.bolaoDataSet1();
 			this.tb_participantesTableAdapter = new AppBolao3.bolaoDataSet1TableAdapters.tb_participantesTableAdapter();
 			this.btnAtualizarTabela = new System.Windows.Forms.Button();
-			this.Posição = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClassificacao)).BeginInit();
@@ -58,15 +60,46 @@
 			// 
 			this.dgvClassificacao.AllowUserToAddRows = false;
 			this.dgvClassificacao.AllowUserToDeleteRows = false;
-			this.dgvClassificacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvClassificacao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Posição});
+			this.dgvClassificacao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.dgvClassificacao.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+			this.dgvClassificacao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+			this.dgvClassificacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvClassificacao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+			this.dgvClassificacao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.RoyalBlue;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvClassificacao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			this.dgvClassificacao.ColumnHeadersHeight = 30;
+			this.dgvClassificacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+			this.dgvClassificacao.EnableHeadersVisualStyles = false;
 			this.dgvClassificacao.Location = new System.Drawing.Point(23, 29);
 			this.dgvClassificacao.Name = "dgvClassificacao";
 			this.dgvClassificacao.ReadOnly = true;
+			this.dgvClassificacao.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvClassificacao.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			this.dgvClassificacao.RowHeadersVisible = false;
 			this.dgvClassificacao.RowHeadersWidth = 51;
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(108)))));
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+			this.dgvClassificacao.RowsDefaultCellStyle = dataGridViewCellStyle3;
 			this.dgvClassificacao.RowTemplate.Height = 24;
-			this.dgvClassificacao.Size = new System.Drawing.Size(507, 395);
+			this.dgvClassificacao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvClassificacao.Size = new System.Drawing.Size(539, 395);
 			this.dgvClassificacao.TabIndex = 0;
 			// 
 			// tbparticipantesBindingSource
@@ -85,7 +118,7 @@
 			// 
 			// btnAtualizarTabela
 			// 
-			this.btnAtualizarTabela.Location = new System.Drawing.Point(619, 64);
+			this.btnAtualizarTabela.Location = new System.Drawing.Point(647, 63);
 			this.btnAtualizarTabela.Name = "btnAtualizarTabela";
 			this.btnAtualizarTabela.Size = new System.Drawing.Size(141, 52);
 			this.btnAtualizarTabela.TabIndex = 1;
@@ -93,19 +126,11 @@
 			this.btnAtualizarTabela.UseVisualStyleBackColor = true;
 			this.btnAtualizarTabela.Click += new System.EventHandler(this.btnAtualizarTabela_Click);
 			// 
-			// Posição
-			// 
-			this.Posição.Frozen = true;
-			this.Posição.HeaderText = "Posição";
-			this.Posição.MinimumWidth = 6;
-			this.Posição.Name = "Posição";
-			this.Posição.Width = 125;
-			// 
 			// GridClassificacao
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Blue;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
 			this.Controls.Add(this.btnAtualizarTabela);
 			this.Controls.Add(this.dgvClassificacao);
@@ -128,6 +153,5 @@
 		private System.Windows.Forms.BindingSource tbparticipantesBindingSource;
 		private bolaoDataSet1TableAdapters.tb_participantesTableAdapter tb_participantesTableAdapter;
 		private System.Windows.Forms.Button btnAtualizarTabela;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Posição;
 	}
 }

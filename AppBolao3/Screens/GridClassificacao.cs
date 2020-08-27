@@ -28,7 +28,7 @@ namespace AppBolao3.Screens
 		private void btnAtualizarTabela_Click(object sender, EventArgs e)
 		{
 			//Comando MySQL
-			cmd.CommandText = "SELECT nm_nome, nu_pontuacao from TB_PARTICIPANTES order by nu_pontuacao desc; ";
+			cmd.CommandText = "SELECT ROW_NUMBER() OVER(ORDER BY nu_pontuacao_partic DESC) AS Posição, TB_PARTICIPANTES.nm_nome AS Nome, TB_PARTICIPANTES.nu_pontuacao_partic As Pontuação FROM TB_PARTICIPANTES;";
 
 			try
 			{
