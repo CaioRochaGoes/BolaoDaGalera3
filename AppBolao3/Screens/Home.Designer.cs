@@ -33,6 +33,7 @@
 			this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gridPaisesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.gridClassificacaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.crudParticipantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -51,7 +52,8 @@
 			// 
 			this.tabelasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gridPaisesToolStripMenuItem,
-            this.gridClassificacaoToolStripMenuItem});
+            this.gridClassificacaoToolStripMenuItem,
+            this.crudParticipantesToolStripMenuItem});
 			this.tabelasToolStripMenuItem.Name = "tabelasToolStripMenuItem";
 			this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
 			this.tabelasToolStripMenuItem.Text = "Tabelas";
@@ -69,6 +71,13 @@
 			this.gridClassificacaoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
 			this.gridClassificacaoToolStripMenuItem.Text = "Grid Classificacao";
 			this.gridClassificacaoToolStripMenuItem.Click += new System.EventHandler(this.gridClassificacaoToolStripMenuItem_Click);
+			// 
+			// crudParticipantesToolStripMenuItem
+			// 
+			this.crudParticipantesToolStripMenuItem.Name = "crudParticipantesToolStripMenuItem";
+			this.crudParticipantesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.crudParticipantesToolStripMenuItem.Text = "Crud Participantes";
+			this.crudParticipantesToolStripMenuItem.Click += new System.EventHandler(this.crudParticipantesToolStripMenuItem_Click);
 			// 
 			// Home
 			// 
@@ -94,5 +103,6 @@
 		private System.Windows.Forms.ToolStripMenuItem tabelasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem gridPaisesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem gridClassificacaoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem crudParticipantesToolStripMenuItem;
 	}
 }

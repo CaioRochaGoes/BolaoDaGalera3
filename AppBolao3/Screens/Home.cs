@@ -29,5 +29,10 @@ namespace AppBolao3.Screens
 		{
 			new GridClassificacao().Show();
 		}
+
+		private void crudParticipantesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
