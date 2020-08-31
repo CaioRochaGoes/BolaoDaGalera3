@@ -61,8 +61,9 @@ namespace AppBolao3.Screens
 		{
 			new Home().Show();
 
-			
-			
+
 		}
+		
+		
 	}
 }

@@ -18,6 +18,16 @@ namespace AppBolao3.Screens
 			InitializeComponent();
 			
 		}
-		
+
+		private void gridPaisesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new GridPaises().Show();
+
+		}
+
+		private void gridClassificacaoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new GridClassificacao().Show();
+		}
 	}
 }

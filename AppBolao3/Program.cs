@@ -16,7 +16,7 @@ namespace AppBolao3
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new AppBolao3.Screens.GridClassificacao());
+			Application.Run(new AppBolao3.Screens.Home());
 		}
 	}
 }

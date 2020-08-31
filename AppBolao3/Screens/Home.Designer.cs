@@ -30,27 +30,45 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tabelasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.gridPaisesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.gridClassificacaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
 			// 
-			this.menuStrip1.Enabled = false;
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2});
+            this.tabelasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(575, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
-			// toolStripMenuItem2
+			// tabelasToolStripMenuItem
 			// 
-			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(31, 24);
-			this.toolStripMenuItem2.Text = "1";
+			this.tabelasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gridPaisesToolStripMenuItem,
+            this.gridClassificacaoToolStripMenuItem});
+			this.tabelasToolStripMenuItem.Name = "tabelasToolStripMenuItem";
+			this.tabelasToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+			this.tabelasToolStripMenuItem.Text = "Tabelas";
+			// 
+			// gridPaisesToolStripMenuItem
+			// 
+			this.gridPaisesToolStripMenuItem.Name = "gridPaisesToolStripMenuItem";
+			this.gridPaisesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.gridPaisesToolStripMenuItem.Text = "Grid Paises";
+			this.gridPaisesToolStripMenuItem.Click += new System.EventHandler(this.gridPaisesToolStripMenuItem_Click);
+			// 
+			// gridClassificacaoToolStripMenuItem
+			// 
+			this.gridClassificacaoToolStripMenuItem.Name = "gridClassificacaoToolStripMenuItem";
+			this.gridClassificacaoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+			this.gridClassificacaoToolStripMenuItem.Text = "Grid Classificacao";
+			this.gridClassificacaoToolStripMenuItem.Click += new System.EventHandler(this.gridClassificacaoToolStripMenuItem_Click);
 			// 
 			// Home
 			// 
@@ -63,7 +81,6 @@
 			this.DoubleBuffered = true;
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Home";
-			this.Text = "Home";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
@@ -74,6 +91,8 @@
 		#endregion
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
-		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem tabelasToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem gridPaisesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem gridClassificacaoToolStripMenuItem;
 	}
 }
