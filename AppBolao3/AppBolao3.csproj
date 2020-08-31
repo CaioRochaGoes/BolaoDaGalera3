@@ -185,6 +185,7 @@
     <Folder Include="ClassesGerais\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Img\Icons\arrow-alt-circle-left-regular.svg" />
     <Content Include="Img\LogoBolaoImg.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

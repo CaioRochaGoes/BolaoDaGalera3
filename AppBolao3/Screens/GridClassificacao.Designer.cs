@@ -39,6 +39,7 @@
 			this.bolaoDataSet1 = new AppBolao3.bolaoDataSet1();
 			this.tb_participantesTableAdapter = new AppBolao3.bolaoDataSet1TableAdapters.tb_participantesTableAdapter();
 			this.btnAtualizarTabela = new System.Windows.Forms.Button();
+			this.btnVoltar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bolaoDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvClassificacao)).BeginInit();
@@ -118,7 +119,7 @@
 			// 
 			// btnAtualizarTabela
 			// 
-			this.btnAtualizarTabela.Location = new System.Drawing.Point(647, 63);
+			this.btnAtualizarTabela.Location = new System.Drawing.Point(626, 44);
 			this.btnAtualizarTabela.Name = "btnAtualizarTabela";
 			this.btnAtualizarTabela.Size = new System.Drawing.Size(141, 52);
 			this.btnAtualizarTabela.TabIndex = 1;
@@ -126,12 +127,23 @@
 			this.btnAtualizarTabela.UseVisualStyleBackColor = true;
 			this.btnAtualizarTabela.Click += new System.EventHandler(this.btnAtualizarTabela_Click);
 			// 
+			// btnVoltar
+			// 
+			this.btnVoltar.Location = new System.Drawing.Point(691, 398);
+			this.btnVoltar.Name = "btnVoltar";
+			this.btnVoltar.Size = new System.Drawing.Size(97, 40);
+			this.btnVoltar.TabIndex = 2;
+			this.btnVoltar.Text = "Voltar Home";
+			this.btnVoltar.UseVisualStyleBackColor = true;
+			this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+			// 
 			// GridClassificacao
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(70)))), ((int)(((byte)(80)))));
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnVoltar);
 			this.Controls.Add(this.btnAtualizarTabela);
 			this.Controls.Add(this.dgvClassificacao);
 			this.Name = "GridClassificacao";
@@ -153,5 +165,6 @@
 		private System.Windows.Forms.BindingSource tbparticipantesBindingSource;
 		private bolaoDataSet1TableAdapters.tb_participantesTableAdapter tb_participantesTableAdapter;
 		private System.Windows.Forms.Button btnAtualizarTabela;
+		private System.Windows.Forms.Button btnVoltar;
 	}
 }

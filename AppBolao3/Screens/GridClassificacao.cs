@@ -57,6 +57,12 @@ namespace AppBolao3.Screens
 
 		}
 
-		
+		private void btnVoltar_Click(object sender, EventArgs e)
+		{
+			new Home().Show();
+
+			
+			
+		}
 	}
 }

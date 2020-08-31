@@ -19,28 +19,5 @@ namespace AppBolao3.Screens
 			
 		}
 		
-
-
-		
-
-		private void CbolaoToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			GridClassificacao formgridClassificacao = new GridClassificacao();
-			Home formHome = new Home();
-			
-		}
-
-		private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			string menssagem = "Deseja mesmo sair da aplicação ?";
-			string acao = "FECHAR APLICAÇÂO";
-			var resultado = MessageBox.Show(menssagem, acao, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-			if (resultado == DialogResult.Yes)
-			{
-				MessageBox.Show("Obrigado por usar aplicação");
-				Close();
-
-			}
-		}
 	}
 }
