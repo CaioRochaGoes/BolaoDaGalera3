@@ -154,7 +154,7 @@
 			this.btnLimparCampos.Name = "btnLimparCampos";
 			this.btnLimparCampos.Size = new System.Drawing.Size(141, 45);
 			this.btnLimparCampos.TabIndex = 11;
-			this.btnLimparCampos.Text = "LimparCampos";
+			this.btnLimparCampos.Text = "Limpar Campos";
 			this.btnLimparCampos.UseVisualStyleBackColor = true;
 			this.btnLimparCampos.Click += new System.EventHandler(this.btnLimparCampos_Click);
 			// 
