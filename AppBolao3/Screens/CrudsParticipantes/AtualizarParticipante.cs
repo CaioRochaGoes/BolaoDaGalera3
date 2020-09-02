@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppBolao3.Screens
+namespace AppBolao3.Screens.CrudsParticipantes
 {
-	public partial class CrudParticipantes : Form
+	public partial class AtualizarParticipante : Form
 	{
-		public CrudParticipantes()
+		public AtualizarParticipante()
 		{
 			InitializeComponent();
 		}

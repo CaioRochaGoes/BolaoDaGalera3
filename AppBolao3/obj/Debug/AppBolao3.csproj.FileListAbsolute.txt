@@ -34,3 +34,4 @@ C:\Programacao\Repositorio_PrjetosVisualStudio\Bolao\BolaoDaGalera3\AppBolao3\ob
 C:\Programacao\Repositorio_PrjetosVisualStudio\Bolao\BolaoDaGalera3\AppBolao3\obj\Debug\AppBolao3.exe
 C:\Programacao\Repositorio_PrjetosVisualStudio\Bolao\BolaoDaGalera3\AppBolao3\obj\Debug\AppBolao3.pdb
 C:\Programacao\Repositorio_PrjetosVisualStudio\Bolao\BolaoDaGalera3\AppBolao3\obj\Debug\AppBolao3.Screens.GridPaises.resources
+C:\Programacao\Repositorio_PrjetosVisualStudio\Bolao\BolaoDaGalera3\AppBolao3\obj\Debug\AppBolao3.Screens.dgvCrudParticipantes.resources

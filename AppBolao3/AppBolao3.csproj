@@ -140,6 +140,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screens\CrudParticipantes.resx">
+      <DependentUpon>CrudParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\GridClassificacao.resx">
       <DependentUpon>GridClassificacao.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,7 +32,7 @@ namespace AppBolao3.Screens
 
 		private void crudParticipantesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-
+			new dgvCrudParticipantes().Show();
 		}
 	}
 }

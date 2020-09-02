@@ -1,6 +1,6 @@
-﻿namespace AppBolao3.Screens
+﻿namespace AppBolao3.Screens.CrudsParticipantes
 {
-	partial class CrudParticipantes
+	partial class AtualizarParticipante
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -31,7 +31,7 @@
 			this.components = new System.ComponentModel.Container();
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "CrudParticipantes";
+			this.Text = "AtualizarParticipante";
 		}
 
 		#endregion
