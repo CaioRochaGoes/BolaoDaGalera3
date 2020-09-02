@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using AppBolao3.Screens.CrudsParticipantes;
+using MySql.Data.MySqlClient;
 using StringConnection;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace AppBolao3.Screens
 		private void btnAtualizar_Click(object sender, EventArgs e)
 		{
 			//Comando MySQL
-			cmd.CommandText = "SELECT id_participante AS ID , nm_nome AS Nome, txt_descricao AS Descricao FROM TB_PARTICIPANTES;";
+			cmd.CommandText = "SELECT id_participante AS ID , nm_nome AS Nome, txt_descricao AS Descricao, nu_status AS Status FROM TB_PARTICIPANTES;";
 
 
 
@@ -44,7 +45,7 @@ namespace AppBolao3.Screens
 				DataTable dt = new DataTable();
 
 				da.Fill(dt);
-				dgvCrudParticipante.DataSource = dt;
+				dgvGridParticipante.DataSource = dt;
 
 				// Desconectar O Banco
 				conexao.desconectar();
@@ -62,7 +63,7 @@ namespace AppBolao3.Screens
 
 		private void btnNovoParticipante_Click(object sender, EventArgs e)
 		{
-
+			new InserirParticipante().Show();
 		}
 	}
 }

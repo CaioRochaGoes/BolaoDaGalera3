@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.btnAtualizar = new System.Windows.Forms.Button();
-			this.dgvCrudParticipante = new System.Windows.Forms.DataGridView();
+			this.dgvGridParticipante = new System.Windows.Forms.DataGridView();
 			this.btnNovoParticipante = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this.dgvCrudParticipante)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvGridParticipante)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnAtualizar
@@ -45,15 +45,15 @@
 			this.btnAtualizar.UseVisualStyleBackColor = true;
 			this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
 			// 
-			// dgvCrudParticipante
+			// dgvGridParticipante
 			// 
-			this.dgvCrudParticipante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvCrudParticipante.Location = new System.Drawing.Point(12, 12);
-			this.dgvCrudParticipante.Name = "dgvCrudParticipante";
-			this.dgvCrudParticipante.RowHeadersWidth = 51;
-			this.dgvCrudParticipante.RowTemplate.Height = 24;
-			this.dgvCrudParticipante.Size = new System.Drawing.Size(650, 502);
-			this.dgvCrudParticipante.TabIndex = 2;
+			this.dgvGridParticipante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvGridParticipante.Location = new System.Drawing.Point(12, 12);
+			this.dgvGridParticipante.Name = "dgvGridParticipante";
+			this.dgvGridParticipante.RowHeadersWidth = 51;
+			this.dgvGridParticipante.RowTemplate.Height = 24;
+			this.dgvGridParticipante.Size = new System.Drawing.Size(650, 502);
+			this.dgvGridParticipante.TabIndex = 2;
 			// 
 			// btnNovoParticipante
 			// 
@@ -82,18 +82,18 @@
 			this.ClientSize = new System.Drawing.Size(863, 526);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.btnNovoParticipante);
-			this.Controls.Add(this.dgvCrudParticipante);
+			this.Controls.Add(this.dgvGridParticipante);
 			this.Controls.Add(this.btnAtualizar);
 			this.Name = "dgvCrudParticipantes";
 			this.Text = "CrudParticipantes";
-			((System.ComponentModel.ISupportInitialize)(this.dgvCrudParticipante)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvGridParticipante)).EndInit();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 		private System.Windows.Forms.Button btnAtualizar;
-		private System.Windows.Forms.DataGridView dgvCrudParticipante;
+		private System.Windows.Forms.DataGridView dgvGridParticipante;
 		private System.Windows.Forms.Button btnNovoParticipante;
 		private System.Windows.Forms.Button button2;
 	}
